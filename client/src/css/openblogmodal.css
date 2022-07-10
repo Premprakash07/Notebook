@@ -1,0 +1,129 @@
+#openblogmodal {
+  background-color: rgba(0, 0, 0, 0.363);
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  left: 0;
+  z-index: 101;
+}
+#openblogmodal .openblogmodal-container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+  min-width: 300px;
+  margin: 0px 20px;
+  margin-top: 20px;
+  width: 675px;
+  height: 80vh;
+  background-color: rgb(46, 46, 46);
+  padding: 15px;
+  font-size: 0.9rem;
+  padding-top: 30px;
+  border-radius: 8px;
+  animation: modalpop 0.3s 1 forwards;
+  border-bottom: 5px solid transparent;
+  border-image: linear-gradient(to right, #4b00ad, #b12aff);
+  border-image-slice: 1;
+}
+#openblogmodal .openblogmodal-container .close-modal-btn {
+  position: absolute;
+  top: -75px;
+  right: 50%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: rgb(48, 48, 48);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  font-size: 1.7rem;
+  border-radius: 50%;
+  transition: 0.3s;
+}
+#openblogmodal .openblogmodal-container .close-modal-btn:hover {
+  background-color: black;
+}
+#openblogmodal .openblogmodal-container .title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  letter-spacing: 2px;
+  margin-bottom: 10px;
+}
+#openblogmodal .openblogmodal-container .title .blog-option {
+  display: flex;
+  align-items: center;
+  font-size: 1.2rem;
+}
+#openblogmodal .openblogmodal-container .title .blog-option div {
+  margin-left: 10px;
+}
+#openblogmodal .openblogmodal-container .blog-body {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  overflow-y: auto;
+  overflow-x: hidden;
+  width: 100%;
+}
+#openblogmodal .openblogmodal-container .img-and-details {
+  display: flex;
+  justify-content: space-between;
+}
+#openblogmodal .openblogmodal-container .img {
+  height: 225px;
+  background-color: rgb(255, 59, 59);
+  width: 100%;
+  margin-bottom: 10px;
+  margin-right: 10px;
+  border-radius: 8px;
+  object-fit: cover;
+  box-shadow: 10px 10px 10px 10px inset rgb(236, 25, 25);
+}
+#openblogmodal .openblogmodal-container .img-and-details .details {
+  width: 400px;
+}
+#openblogmodal .openblogmodal-container .img-and-details .details div {
+  margin-bottom: 10px;
+  font-size: 0.85rem;
+  color: rgb(175, 175, 175);
+}
+#openblogmodal
+  .openblogmodal-container
+  .img-and-details
+  .details
+  .detail-title
+  span {
+  font-size: 1.2rem;
+  letter-spacing: 1.4px;
+  font-weight: bold;
+}
+#openblogmodal .openblogmodal-container .blog-content {
+  font-size: 0.8rem;
+  font-family: "Roboto", sans-serif;
+  white-space: pre-wrap;
+  flex: 1;
+  letter-spacing: 0.5px;
+}
+
+@keyframes modalpop {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .details{
+    display: none;
+  }
+}

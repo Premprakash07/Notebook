@@ -1,0 +1,58 @@
+#notes .section-name {
+  color: rgb(72, 145, 255);
+}
+.notes-container {
+  display: flex;
+  flex-wrap: wrap;
+  color: white;
+}
+.notes-container .note {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 325px;
+  height: 275px;
+  border-radius: 5px;
+  padding: 20px 15px;
+  background-color: rgb(54, 54, 54);
+  /* box-shadow: 0px 0px 10px rgba(0, 0, 0, .1); */
+  bottom: 0px;
+  margin: 10px;
+  transition: 0.2s;
+  border-bottom: 5px solid transparent;
+  border-image: linear-gradient(to right, #4b00ad, #b12aff);
+  border-image-slice: 1;
+}
+.notes-container .note:hover {
+  /* box-shadow: 0px 0px 20px rgba(0, 0, 0, .1); */
+  bottom: 5px;
+  /* transform: scale(1.01); */
+}
+.notes-container .note .note-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+.notes-container .note .note-body {
+  font-size: 0.8rem;
+  flex: 1;
+  font-weight: lighter;
+  overflow-y: auto;
+  /* text-overflow: ellipsis; */
+  white-space: pre-wrap;
+  padding-right: 5px;
+  font-family: 'Roboto', sans-serif;
+}
+.notes-container .note .note-details {
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  /* justify-content: space-between; */
+  margin-top: 10px;
+}
+.notes-container .note .note-details .time-stamp {
+  font-size: 0.75rem;
+  margin-right: 5px;
+  color: gray;
+  font-weight: bold;
+}

@@ -1,0 +1,91 @@
+#opennotemodal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 100;
+  background-color: rgba(0, 0, 0, 0.363);
+  color: white;
+}
+#opennotemodal .opennotemodal-container .close-modal-btn {
+  position: absolute;
+  top: -75px;
+  right: 50%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: rgb(48, 48, 48);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  font-size: 1.7rem;
+  border-radius: 50%;
+  transition: 0.3s;
+}
+#opennotemodal .opennotemodal-container .close-modal-btn:hover {
+  background-color: black;
+}
+#opennotemodal .opennotemodal-container {
+  position: relative;
+  background-color: rgb(46, 46, 46);
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  border-radius: 5px;
+  min-width: 300px;
+  margin: 0px 20px;
+  width: 450px;
+  min-height: 400px;
+  font-weight: lighter;
+  animation: modalpop 0.3s 1 forwards;
+  border-bottom: 5px solid transparent;
+  border-image: linear-gradient(to right, #4b00ad, #b12aff);
+  border-image-slice: 1;
+}
+#opennotemodal .opennotemodal-container .top {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+}
+#opennotemodal .opennotemodal-container .top .title {
+  font-size: 2rem;
+  padding: 10px;
+  border-radius: 5px;
+}
+#opennotemodal .opennotemodal-container .top .note-option {
+  display: flex;
+  align-items: center;
+}
+#opennotemodal .opennotemodal-container .top .note-option > * {
+  margin-left: 10px;
+  font-size: 1.4rem;
+}
+#opennotemodal .opennotemodal-container .top .note-option > *:hover {
+  color: red;
+}
+#opennotemodal .opennotemodal-container .body {
+  font-size: 0.9rem;
+  padding: 0px 10px;
+  border-radius: 5px;
+  line-height: 20px;
+  overflow: auto;
+  font-family: 'Roboto', sans-serif;
+  white-space: pre-wrap;
+  flex: 1;
+  letter-spacing: .5px;
+  /* background-color: rgb(92, 92, 92); */
+}
+
+@keyframes modalpop {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}

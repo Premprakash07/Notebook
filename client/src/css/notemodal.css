@@ -1,0 +1,81 @@
+#add-modal {
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  z-index: 100;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+.addnote-modal {
+  background-color: rgb(44, 44, 44);
+  padding: 15px 30px;
+  min-width: 300px;
+  width: 475px;
+  height: 90vh;
+  margin: 0px 20px;
+  /* border-radius: 5px; */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  animation: modalpop 0.3s 1 forwards;
+  border-bottom: 5px solid transparent;
+  border-image: linear-gradient(to right, #4b00ad, #b12aff);
+  border-image-slice: 1;
+}
+.addnote-modal h2 {
+  color: rgb(185, 185, 185);
+  margin-bottom: 10px;
+}
+.addnote-modal input,
+.addnote-modal textarea {
+  padding: 10px;
+  outline: none;
+  margin-bottom: 5px;
+  font-family: "Roboto", sans-serif;
+  color: white;
+  border: none;
+  background-color: rgb(94, 94, 94);
+  font-size: 1rem;
+}
+.addnote-modal input::placeholder,
+textarea::placeholder {
+  color: rgb(192, 192, 192);
+}
+.addnote-modal .add-option {
+  align-self: flex-end;
+  margin-top: 10px;
+}
+.addnote-modal button {
+  background-color: transparent;
+  color: white;
+  padding: 7px 15px;
+  font-size: 1rem;
+  margin-left: 10px;
+  border: none;
+  border-radius: 3px;
+}
+.addnote-modal button:hover {
+  opacity: 1;
+}
+.addnote-modal .discard-btn {
+  color: rgb(255, 121, 121);
+}
+.addnote-modal .save-btn {
+  background-color: rgb(37, 106, 255);
+  opacity: 0.85;
+}
+.addnote-modal .discard-btn:hover {
+  background-color: rgba(255, 121, 121, 0.178);
+}
+@keyframes modalpop {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}

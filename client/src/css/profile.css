@@ -1,0 +1,66 @@
+#profile-modal {
+  background-color: rgba(0, 0, 0, 0.363);
+  padding: 10px 20px;
+  border-radius: 3px;
+  position: absolute;
+  top: 100%;
+  right: -100%;
+}
+#profile-modal .profile-container {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+}
+#profile-modal .profile-container .head {
+  display: flex;
+  flex-direction: column;
+  font-size: 0.7rem;
+  align-items: center;
+  text-align: center;
+  margin-top: 10px;
+}
+#profile-modal .profile-container .head .email,
+#profile-modal .head .name {
+  margin-bottom: 3px;
+}
+#profile-modal .profile-img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 25px;
+  height: 25px;
+  background-color: rgb(15, 107, 194);
+  border-radius: 50%;
+  margin-bottom: 15px;
+}
+#profile-modal .profile-body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 8px;
+}
+#profile-modal .profile-body div {
+  padding: 5px 0px;
+  width: 100%;
+  text-align: center;
+  border-radius: 3px;
+  color: white;
+  font-size: 0.6rem;
+  display: flex;
+  background-image: linear-gradient(
+    to bottom,
+    rgb(255, 62, 62),
+    rgb(255, 29, 29)
+  );
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  letter-spacing: 1.3px;
+  cursor: pointer;
+}
+#profile-modal .profile-body div:hover {
+  background-image: linear-gradient(to top, rgb(255, 62, 62), rgb(255, 29, 29));
+}
+.profile-body .logout-icon {
+  margin-left: 10px;
+}

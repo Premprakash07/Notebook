@@ -1,0 +1,20 @@
+.main .add-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  height: 55px;
+  width: 55px;
+  font-size: 2.5rem;
+  background-color: #7510f7;
+  position: fixed;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 50px;
+  color: white;
+  z-index: 99;
+  opacity: .75;
+}
+.main .add-icon:hover {
+  opacity: 1;
+}

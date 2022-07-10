@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nothing+You+Could+Do&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans&display=swap');
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+html{
+  font-size: 16px;
+  color: white;
+  font-family: 'DM Sans', sans-serif;
+}
+body{
+  background-color: rgb(41, 41, 41);
+}
+::-webkit-scrollbar{
+  width: 3px;
+}
+::-webkit-scrollbar-thumb{
+  background-color: rgb(209, 203, 203);
+  border-radius: 5px;
+}
+::-webkit-scrollbar-track{
+  background-color: none;
+}
+.section-name{
+  font-weight: bolder;
+  letter-spacing: 3px;
+}
+a{
+  text-decoration: none;
+  color: inherit;
+}

@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html>
+<title>IBed webpage</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<head>
+<style>
+.tooltip {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted black; /* If you want dots under the hoverable text */
+}
+
+/* Tooltip text */
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 400px;
+  background-color: rgb(42, 67, 151);
+  color: #fff;
+  text-align: center;
+  padding: 5px 0;
+  border-radius: 6px;
+
+  /* Position the tooltip text */
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -60px;
+
+  /* Fade in tooltip */
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+/* Tooltip arrow */
+.tooltip .tooltiptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+/* Show the tooltip text when you mouse over the tooltip container */
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
+}
+
+#table1 {
+      font-family: Arial, Helvetica, sans-serif;
+      border-collapse: collapse;
+      width: 100%;
+    }
+    
+    #table1 td, #table1 th {
+      border: 1px solid rgb(182, 179, 179);
+      padding: 8px;
+      padding-left: 30px;
+      padding-right: 40px;
+    }
+    
+    #table1 tr:nth-child(even){background-color: #f2f2f2;}
+    
+    #table1 tr:hover {background-color: rgb(183, 181, 185);}
+    
+    #table1 th {
+      padding-top: 12px;
+      padding-bottom: 12px;
+      text-align: left;
+      background-color: #04AA6D;
+      color: white;
+    }
+    
+
+    #table2 {
+      font-family: Arial, Helvetica, sans-serif;
+      border-collapse: collapse;
+      width: 100%;
+    }
+    
+    #table2 td, #table2 th {
+      border: 1px solid rgb(182, 179, 179);
+      padding: 8px;
+      padding-left: 30px;
+      padding-right: 40px;
+    }
+    
+    #table2 tr:nth-child(even){background-color: #f2f2f2;}
+    
+    #table2 tr:hover {background-color: rgb(183, 181, 185);}
+    
+    #table2 th {
+      padding-top: 12px;
+      padding-bottom: 12px;
+      text-align: left;
+      background-color: #04AA6D;
+      color: white; }
+    
+  hr.line1 {
+  border-top: 2.5px solid rgb(138, 35, 35);
+}
+    </style>
+    </head>
+<body>
+
+    
+<div class="w3-top">
+  <div class="w3-bar w3-white w3-wide w3-padding-8 w3-card">
+    <a href="https://deval0110.wixsite.com/ibed/" class="w3-bar-item w3-button w3-text-indigo w3-hover-text-aqua w3-animate-top"><h1 class="w3-round-xlarge w3-text-indigo w3-hover-text-white">IBed</h1></a>
+  </div>
+</div>
+
+<!-- Header -->
+<header class="w3-display-container w3-content w3-wide w3-animate-top" style="max-width:600px;" id="home">
+  <br><br><br><br><br><br><br>
+  <img class="w3-image" src="https://github.com/devalpareek/pgi_ibed/raw/main/ibed_bg.jpg" alt="gradient" width="1800" >
+  <div class="w3-display-middle w3-margin-top w3-center">
+    <br><br><br><br>
+      <span class="w3-xlarge w3-padding w3-indigo w3-opacity-min"><b>IBed</b></span> 
+      <span class="w3-xlarge w3-text-grey">BCG data</span>
+</header>
+
+<!-- Page content -->
+<div class="w3-content w3-padding" style="max-width:1400px">
+
+  <!-- Project Section -->
+  <div class="w3-container w3-padding-32 w3-animate-top" id="projects">
+    <h3 class="w3-padding w3-indigo w3-hover-gray w3-opacity-min">Data showed via the BCG sensor :</h3>
+  </div>
+</div>
+  <!-- Time, HR, RR, SV, HRV, Signal Strength, Status, B2B, B2B', B2B'' -->
+  <div class="w3-content w3-padding" style="max-width:1300px">
+
+  <div class="w3-row-padding  w3-animate-top">
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-display-container">
+        <div class="w3-padding w3-round w3-indigo w3-opacity-min tooltip">Time stamp
+        <span class="tooltiptext">Time stamp at which data was sent by the sensor</span>
+      </div>
+    </div>
+    </div>
+
+  <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-display-container">
+      <div class="w3-padding w3-round w3-indigo w3-opacity-min tooltip">Heart rate
+      <span class="tooltiptext">Heart rate is the speed of the heartbeat measured by the number of contractions of the heart per minute.</span>
+      </div>
+      </div>
+      </div>
+
+      <div class="w3-col l3 m6 w3-margin-bottom">
+    <div class="w3-display-container">
+      <div class="w3-padding w3-round w3-indigo w3-opacity-min tooltip">Respiration rate
+      <span class="tooltiptext">The respiratory rate is the rate at which breathing occurs; it is set and controlled by the respiratory center of the brain.</span> </div>
+    </div>
+  </div>
+
+  <div class="w3-col l3 m6 w3-margin-bottom">
+    <div class="w3-display-container">
+      <div class="w3-padding w3-round w3-indigo w3-opacity-min tooltip">Relative stroke volume
+      <span class="tooltiptext">Stroke volume (SV) is the volume of blood pumped from the left ventricle per beat.</span>
+    </div>
+  </div> 
+</div>
+
+</div>
+<div class="w3-row-padding  w3-animate-top">
+  <div class="w3-col l3 m6 w3-margin-bottom">
+    <div class="w3-display-container">
+      <div class="w3-padding w3-round w3-indigo w3-opacity-min  tooltip">Measured signal strength indication
+      <span class="tooltiptext">Measured signal strength indication</span></div>
+    </div>
+  </div>
+
+  <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-display-container">
+        <div class="w3-padding w3-round w3-indigo w3-opacity-min tooltip">Simplified heart rate variability
+        <span class="tooltiptext">Heart rate variability is where the amount of time between your heartbeats fluctuates slightly.</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="w3-col l3 m6 w3-margin-bottom">
+    <div class="w3-display-container">
+      <div class="w3-padding w3-round w3-indigo w3-opacity-min tooltip">Status
+      <span class="tooltiptext">0 = low signal; 1 = ok signal; 2 = high signal; 3 = (close to) overload; 4 = (close to) max HR</span></div>
+    </div>
+  </div>
+  <div class="w3-col l3 m6 w3-margin-bottom">
+    <div class="w3-display-container">
+      <div class="w3-padding w3-round w3-indigo w3-opacity-min tooltip">Beat-to-beat time
+      <span class="tooltiptext">Beat-to-beat time</span></div>
+    </div>
+  </div>
+  <div class="w3-col l3 m6 w3-margin-bottom">
+    <div class="w3-display-container">
+      <div class="w3-padding w3-round w3-indigo w3-opacity-min tooltip">Beat-to-beat time*
+      <span class="tooltiptext">*These parameters are non-zero if two/three beats have been detected during one second</span></div>
+    </div>
+  </div>
+  <div class="w3-col l3 m6 w3-margin-bottom">
+    <div class="w3-display-container">
+      <div class="w3-padding w3-round w3-indigo w3-opacity-min tooltip">Beat-to-beat time**
+        <span class="tooltiptext">*These parameters are non-zero if two/three beats have been detected during one second</span>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+</div>
+
+<div class="w3-content w3-padding" style="max-width:1400px">
+    <br><br><br>
+    <table id="table1">
+        <thead>
+            <tr>
+                <td>Time stamp</td>
+                <td>Heart rate</td>
+                <td>Respiration rate</td>
+                <td>Relative stroke volume</td>
+                <td>Simplified heart rate variability</td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+        </tbody>
+    </table>
+    <br>    
+    <table id="table2">
+        <thead>
+            <tr>
+                <td>Measured signal strength indication</td>
+                <td>Status</td>
+                <td>Beat-to-beat time</td>
+                <td>Beat-to-beat time*</td>
+                <td>Beat-to-beat time**</td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+        </tbody>
+    </table>
+  </div>
+
+<br><br><br>
+
+<hr class="line1">
+  <div class="w3-display-container">
+    <div class="w3-display-middle w3-margin-bottom w3-center w3-opacity-min w3-wide">made with <span style='color:red; font-size:25px'>&hearts;</span> by a team at pgi 
+    </div>
+  </div>
+  <br><br>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+    const getdata = () => {
+    fetch("http://localhost:3001/bcgdata", {
+      method: "get",
+    })
+      .then((res) => res.json())
+      .then((data) => {
+        const datastring = data.bcg.trim();
+        const bcgdata = datastring.split(',');
+
+        let bcgidx = 0;
+        const table1 = document.querySelectorAll('#table1 tbody tr td');
+        for (let idx = 0; idx < table1.length; idx++) {
+          const ele = table1[idx];
+          ele.innerHTML = bcgdata[bcgidx]
+          bcgidx++;
+        }
+
+        const table2 = document.querySelectorAll('#table2 tbody tr td')
+        for (let idx = 0; idx < table2.length; idx++) {
+          const ele = table2[idx];
+          ele.innerHTML = bcgdata[bcgidx]
+          bcgidx++;
+        }
+
+      });
+    };
+    $(document).ready(() => {
+
+      setInterval(() => {
+        getdata();
+      }, 1000);
+
+    })
+  
+
+</script>
+
+
+
+</body>
+</html>

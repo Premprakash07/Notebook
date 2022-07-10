@@ -1,0 +1,72 @@
+#header {
+  display: flex;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  width: 100%;
+  padding: 10px 40px;
+  font-size: 1.1rem;
+  background-color: rgb(24, 24, 24);
+  border-bottom: 1px solid rgb(83, 83, 83);
+  color: white;
+  z-index: 100;
+}
+.ham {
+  color: white;
+  padding: 5px;
+  border-radius: 50%;
+}
+.ham:hover {
+  background-color: rgb(77, 77, 77);
+}
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex: 1;
+}
+.header-container .logo {
+  font-family: "Nothing You Could Do", cursive;
+  letter-spacing: 1.5px;
+  /* font-weight: bold; */
+  font-size: 1.7rem;
+}
+.header-container .nav {
+  display: flex;
+  font-weight: lighter;
+  flex-direction: row;
+}
+#header .profile-img .acc-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 25px;
+  height: 25px;
+  background-color: rgb(15, 107, 194);
+  border-radius: 50%;
+  cursor: pointer;
+}
+#header .profile-img {
+  display: flex;
+  align-items: center;
+  padding: 2px;
+  transform: scale(1.5);
+  border-radius: 50%;
+}
+.nav .nav-item {
+  margin: 0px 5px;
+  display: flex;
+  align-items: center;
+}
+.nav .log-in-info .log-in-info-item {
+  margin: 0px 10px;
+}
+
+@media screen and (max-width: 575px) {
+  .nav .log-in-info .name{
+    display: none;
+  }
+  #header{
+    padding: 10px;
+  }
+}

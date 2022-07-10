@@ -1,0 +1,107 @@
+#signup {
+  display: flex;
+  align-items: center;
+  height: 600px;
+  width: 100%;
+}
+#signup .signup-bg {
+  flex: 1;
+  /* background-image: url("https://image.freepik.com/free-vector/notebook-mockup_23-2147496272.jpg");
+  background-size: cover; */
+  height: 100%;
+  background-color: rgb(24, 24, 24);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Nothing You Could Do", cursive;
+  font-size: 6rem;
+  font-weight: lighter;
+}
+#signup .signup-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 30px;
+  width: max-content;
+  /* background-color: rgb(0, 81, 255, .2); */
+  background-color: rgba(59, 59, 59, 0.2);
+  margin: auto;
+  height: 100%;
+}
+#signup .signup-head {
+  font-size: 1.35rem;
+  /* font-weight: bold; */
+  margin: 10px;
+  /* color: #7510f7; */
+  color: rgb(207, 207, 207);
+}
+#signup form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+#signup input {
+  font-size: 0.95rem;
+  padding: 8px 10px;
+  max-width: 300px;
+  /* border-radius: 5px; */
+  border: none;
+  width: 300px;
+  font-weight: 500;
+  color: rgb(99, 99, 99);
+  margin: 10px 0px;
+  border-radius: 2px;
+  outline: none;
+  /* outline-color: rgb(75, 132, 255); */
+  font-family: "Quicksand", sans-serif;
+}
+#signup .pwd {
+  margin: 10px 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#signup .pwd input {
+  margin: 0px;
+}
+#signup .err {
+  align-self: flex-end;
+  font-size: 0.8rem;
+  line-height: 20px;
+  color: red;
+  margin-top: 5px;
+  letter-spacing: 1px;
+}
+#signup .client-err {
+  align-self: center;
+}
+#signup button {
+  /* background-image: linear-gradient(to bottom, #7510f7, #a210f7); */
+  /* background-color: #7510f7; */
+  background-color: rgb(29, 29, 29);
+  padding: 7px 25px;
+  border: none;
+  width: 100%;
+  color: white;
+  border-radius: 3px;
+  margin: 5px 0px;
+  font-family: "Quicksand", sans-serif;
+}
+#signup button:hover {
+  /* box-shadow: 0px 0px 5px 3px inset rgba(0, 0, 0, 0.13); */
+  background-color: black;
+}
+#signup .already-acc-new-acc {
+  /* color: #a210f7; */
+  color: rgb(207, 207, 207);
+  font-size: 0.85rem;
+  cursor: pointer;
+  margin: 10px 0px;
+}
+#signup .already-acc-new-acc:hover {
+  /* color: #7510f7; */
+  color: white;
+}

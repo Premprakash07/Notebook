@@ -1,0 +1,22 @@
+.main {
+  max-width: 2000px;
+  margin: 0px auto;
+  padding: 30px 50px;
+}
+.ham {
+  display: flex;
+  align-items: center;
+  color: white;
+  font-size: 2rem;
+  margin-right: 15px;
+}
+.main .section-name {
+  margin: 20px 0px;
+  font-size: 1.7rem;
+}
+
+@media screen and (max-width: 600px) {
+  .main {
+    padding: 20px;
+  }
+}

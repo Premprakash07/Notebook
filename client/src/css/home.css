@@ -1,0 +1,51 @@
+#home{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    cursor: auto;
+}
+#home .home-link-container{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    margin: 10px;
+    height: 250px;
+    border-radius: 5px;
+    bottom: 0;
+    color: rgb(104, 152, 255);
+    transition: .3s;
+    border: 3px solid rgb(104, 152, 255);
+}
+/* #home .note-link{
+    background: radial-gradient(153.02% 89.8% at 144.61% 135.28%, #4891FF 0%, #7EB1FF 0%, #4891FF 100%);
+    box-shadow: 0px 0px 10px #4891FF;
+}
+#home .blog-link{
+    background: radial-gradient(153.02% 89.8% at 144.61% 135.28%, #00FF66 0%, #FF6666 0%, #FF3232 100%);
+    box-shadow: 0px 0px 10px #FF6666;
+} */
+#home .to-do-link{
+    background: radial-gradient(153.02% 89.8% at 144.61% 135.28%, #00FF66 0%, #87FF73 0%, #28A71D 100%);
+    box-shadow: 0px 0px 10px #00FF66;
+}
+#home .home-link-container:hover{
+    bottom: 5px;
+}
+#home .home-link-container h1{
+    padding-bottom: 5px;
+    /* border-bottom: 1px solid white; */
+}
+#home .home-link-container .quicklinks{
+    display: flex;
+    flex-direction: column;
+    font-size: .8rem;
+    margin: 10px;
+}
+.quicklinks .link{
+    width: max-content;
+    margin: 7px 0px;
+}
+.quicklinks .link:hover{
+    /* text-decoration: underline; */
+}
