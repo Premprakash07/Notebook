@@ -7,7 +7,7 @@ const Blogschema = {
   createdon: String,
   lastupdated: String,
   img_name: String,
-  blog_image: String,
+  blog_image: { type: mongoose.Schema.Types.Mixed },
 };
 
 const Blog = mongoose.model("Blog", Blogschema);

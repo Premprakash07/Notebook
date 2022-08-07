@@ -1,21 +1,24 @@
 import User from "../schema/user.js";
 import bcryptjs from "bcryptjs";
+import generateJwtoken from "../middleware/cookiesGen.js";
 
 const salt = 10;
 
-export const Login = (req, res) => {
+export const Login = async (req, res) => {
   const email = req.body.email;
   const pwd = req.body.password;
 
-  User.findOne({ email: email }, (error, found) => {
+  await User.findOne({ email: email }, async (error, found) => {
     if (error) {
       console.log("Error: ", error);
     } else {
       if (found) {
-        bcryptjs.compare(pwd, found.password, (err, result) => {
+        await bcryptjs.compare(pwd, found.password, async (err, result) => {
           if (result) {
-            req.session.user = found;
             console.log(found);
+            const token = await generateJwtoken(found.email);
+            console.log(token)
+            res.cookie("userid", token);
             res.status(200).send({ ...found, status: "user found" });
           } else {
             res.status(400).send({ status: "Password didn't match." });

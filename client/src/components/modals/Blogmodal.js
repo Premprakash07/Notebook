@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "../../css/blogmodal.css";
 import { MdModeEdit } from "react-icons/md";
 import blogschema from "../../schema/blogschema";
@@ -28,9 +28,10 @@ function Blogmodal(props) {
     const reader = new FileReader();
     reader.onload = () => {
       setimgPreview(reader.result);
+      setimgfile(reader.result);
     };
     reader.readAsDataURL(imgsrc);
-    setimgfile(imgsrc);
+    // setimgfile(imgsrc);
   };
 
   const handleSubmit = async (e) => {
@@ -105,15 +106,15 @@ function Blogmodal(props) {
             />
           </div>
         </form>
-        
-          <div className="add-options">
-            <button type="submit" className="save-btn" onClick={handleSubmit}>
-              Save
-            </button>
-            <button className="discard-btn" onClick={props.close}>
-              Discard
-            </button>
-          </div>
+
+        <div className="add-options">
+          <button type="submit" className="save-btn" onClick={handleSubmit}>
+            Save
+          </button>
+          <button className="discard-btn" onClick={props.close}>
+            Discard
+          </button>
+        </div>
       </div>
     </div>
   );

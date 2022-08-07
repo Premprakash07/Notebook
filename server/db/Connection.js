@@ -1,10 +1,8 @@
-// require("dotenv").config();
 import mongoose from "mongoose";
 
 const Connection = async () => {
   const Url =
-    "mongodb+srv://premprakash:notebookDB@notebook.nr1os.mongodb.net/notebook?retryWrites=true&w=majority";
-
+    "mongodb+srv://premprakash:notebookDB@notebook.nr1os.mongodb.net/?retryWrites=true&w=majority";
   await mongoose
     .connect(Url, {
       useNewUrlParser: true,

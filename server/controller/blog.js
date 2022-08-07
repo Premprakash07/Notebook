@@ -8,8 +8,8 @@ export const uploadblog = async (req, res) => {
     author: req.body.author,
     lastupdated: req.body.lastupdated,
     createdon: req.body.createdon,
-    img_name: req.file ? req.file.filename : "DefaultBlogImg",
-    blog_image: req.file && `http://localhost:5000/file/${req.file.filename}`,
+    img_name: req.body.img_name ? req.body.img_name : "DefaultBlogImg",
+    blog_image: req.body.blog_image && req.body.blog_image,
   });
   await newblog.save();
   res.send({ status: "note uploaded" });
@@ -34,10 +34,8 @@ export const updateblog = async (req, res) => {
     author: req.body.author,
     lastupdated: req.body.lastupdated,
     createdon: req.body.createdon,
-    img_name: req.file ? req.file.filename : req.body.img_name,
-    blog_image: req.file
-      ? `http://localhost:5000/file/${req.file.filename}`
-      : req.body.blog_image,
+    img_name: req.body.img_name ? req.body.img_name : "DefaultBlogImg",
+    blog_image: req.body.blog_image && req.body.blog_image,
   };
   await Blog.findByIdAndUpdate(blogid, { $set: newblog });
   res.status(200).json("blog updated");
